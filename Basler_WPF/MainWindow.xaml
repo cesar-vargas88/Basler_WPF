@@ -1,0 +1,16 @@
+﻿<Window x:Class="Basler_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Basler_WPF"
+        mc:Ignorable="d"
+        Loaded="Page_Loaded"
+        Title="Basler WPF" Height="1064" Width="1920">
+    <Grid>
+        <WindowsFormsHost x:Name="wfhost" Margin="0,0,151,171" HorizontalAlignment="Right" Width="750" Height="750" VerticalAlignment="Bottom" Background="White"/>
+        <Button x:Name="btn_snap" Content="Snap" HorizontalAlignment="Left" Margin="735,171,0,0" VerticalAlignment="Top" Width="201" Height="92" FontSize="36" Click="Btn_snap_Click"/>
+        <Button x:Name="btn_grab" Content="Garb" HorizontalAlignment="Left" Margin="735,298,0,0" VerticalAlignment="Top" Width="201" Height="92" FontSize="36" Click="Btn_grab_Click"/>
+        <Button x:Name="btn_stop" Content="Stop" HorizontalAlignment="Left" Margin="735,423,0,0" VerticalAlignment="Top" Width="201" Height="92" FontSize="36" Click="Btn_stop_Click"/>
+    </Grid>
+</Window>
